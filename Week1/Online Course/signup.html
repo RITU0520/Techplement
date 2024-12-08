@@ -4,11 +4,134 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>sign up form</title>
-    <link rel="stylesheet" href="styleoc.css">
+    <style>
+        body {
+            background-image: url('logo.jpg'); 
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+        }
+        p{
+            display: none;
+            font-size: 12px;
+            color: black;
+        }
+        table tr:hover td p {
+            display: inline;
+            background-color: aqua;
+        }
+       
+
+         input[type=radio]:checked{
+            width: 15px;
+            height: 15px;
+         }
+         input[type="radio"]:checked + label{
+            color: blueviolet;
+         }
+         input[required]{
+            border: 2px solid wheat;
+         }
+         input[required]:focus
+         {
+            color: chocolate;
+         }
+         img{
+            display: none;
+         }
+         input[name='pe']:valid ~ img.valid{
+            display: inline;
+            border: 3px dotted green;
+         }
+         input[name='pe']:invalid~img.invalid{
+            border: 3px dotted red;
+         }
+         form{
+            border: 3px solid black;
+            margin: 10px auto;
+            padding: 20px;
+            background-color: whitesmoke;
+            text-align: center;
+            max-width: 500px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+         }
+         input[type="submit"] {
+            padding: 10px 15px;
+            background-color: cadetblue;
+            border: none;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: darkcyan;
+        }
+        table{
+            width: 100%;
+            max-width: 500px;
+            margin: 0 auto;
+            border-collapse: collapse;
+            background-color: #f9f9f9;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+          
+           
+        }
+    
+        table tr {
+           border-bottom: 1px solid #ddd; 
+        }
+    
+        table tr:last-child {
+           border-bottom: none;
+        }
+
+        table td {
+           padding: 12px 20px;
+           text-align: left;
+           vertical-align: middle; 
+           font-size: 14px; 
+           color: #333; 
+        }
+
+table td input {
+   width: 100%;
+   padding: 8px; 
+   border: 1px solid #ccc; 
+   border-radius: 4px; 
+   font-size: 14px; 
+}
+
+table td input:focus {
+   outline: none; 
+   border-color: #007BFF; 
+   box-shadow: 0 0 4px rgba(0, 123, 255, 0.5); 
+}
+
+table td label {
+   font-weight: bold; 
+}
+
+table td.gender-cell input[type="radio"]{
+    width: auto;
+    margin: 0;
+}
+table td.gender-cell label{
+    margin: auto;
+}
+</style>
    
 </head>
 <body>
-    <h1 style="text-align: center; font-size: 36px; margin-top: 20px;">Sign Up Form</h1>
     <form action="#">
       <table>
         <tr>

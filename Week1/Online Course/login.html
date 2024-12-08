@@ -3,25 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styleoc.css">
+    <title>Login - CourseCraft</title>
+    <style>
+        body {
+            background-image: url('logo.jpg'); 
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+            padding: 10px;
+            background-color: rgba(22, 71, 218, 0.8);
+            border-radius: 8px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+
+        .login-form {
+            background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .login-form h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 1.6rem;
+            color: #333;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+            color: #333;
+            transition: border-color 0.3s;
+        }
+
+        input:focus {
+            border-color: #4267B2;
+            outline: none;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #4267B2;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #365899;
+        }
+
+       
+
+    </style>
 </head>
 <body>
-    <header>
-        <h1 class="center-text"> WELCOME TO COURSECRAFT </h1>
-    </header>
+    
     <main>
         <div class="container">
             <div class="login-form">
                 <form>
-                    <input type="text" placeholder="Email or phone number" required>
-                    <input type="password" placeholder="password" required>
+                    <input type="text" placeholder="Email or Phone Number" required>
+                    <input type="password" placeholder="Password" required>
+                    &nbsp;&nbsp;
+                    <div style="color: #333;">
+                        <p>Don't have an account? <a href="signup.html">Sign up</a></p>
+                    </div>
                     <button type="submit">Log In</button>
                 </form>
             </div>
         </div>
     </main>
-   
    
 </body>
 </html>
