@@ -6,5 +6,4 @@ JavaScript was implemented to power dynamic elements such as form validations, i
 devices,from desktops to smartphones. 
 
 
-Uploading onlinecourse selling.mp4…
 
